@@ -14,7 +14,8 @@ export default function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/admin/courses">Courses</Link> |{" "}
+        <Link to="/admin/course">Course</Link> |{" "}
+        <Link to="/admin/assessment">Assessment</Link> |{" "}
       </nav>
     </div>
   );

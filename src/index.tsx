@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Courses from './Routes/Courses';
+import Course from './Routes/Course';
+import Assessment from './Routes/Assessment';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +14,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="admin/courses" element={<Courses />} />
+      <Route path="admin/course" element={<Course />} />
+      <Route path="admin/assessment" element={<Assessment />} />
     </Routes>
   </BrowserRouter>
 );
