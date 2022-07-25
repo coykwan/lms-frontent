@@ -1,4 +1,4 @@
-import GlobalStateRecord from "../models/view-models/global-state-record";
+import GlobalStateRecord from "models/view-models/global-state-record";
 import { GlobalStateUpdater } from "./contexts/use-global-state-context";
 import { AxiosResponse } from "axios";
 import { PromiseFactory, ResultRecord } from "andculturecode-javascript-core";

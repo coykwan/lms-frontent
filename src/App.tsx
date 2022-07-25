@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { Course } from "pages/admin/Course"
 
 export default function App() {
   return (
+    
     <div>
       <h1>hello world</h1>
       <nav
@@ -18,5 +19,6 @@ export default function App() {
         <Link to="/admin/assessment">Assessment</Link> |{" "}
       </nav>
     </div>
+    
   );
 }
