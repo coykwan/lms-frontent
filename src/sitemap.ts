@@ -1,6 +1,7 @@
 export const siteMap = {
-    dashboards: {
-        user: "/dashboards/user",
+    admin: {
+        course: "/admin/course",
+        assessment: "/admin/assessment",
     },
     errors: {
         accessDenied: "/errors/access-denied",

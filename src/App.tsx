@@ -1,24 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "pages/Home"
+import { NavBar } from "pages/NavBar"
 import { Course } from "pages/admin/Course"
+import { Assessment } from "pages/admin/Assessment"
+import { siteMap } from "sitemap";
 
 export default function App() {
   return (
-    
-    <div>
-      <h1>hello world</h1>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/admin/course">Course</Link> |{" "}
-        <Link to="/admin/assessment">Assessment</Link> |{" "}
-      </nav>
-    </div>
-    
+    <>
+      <NavBar />
+      <div className="container">
+        <Routes>
+            <Route path={siteMap.root} element={<Home />} />
+            <Route path={siteMap.admin.course} element={<Course />} />
+            <Route path={siteMap.admin.assessment} element={<Assessment />} />
+        </Routes>
+      </div>
+    </> 
   );
 }
